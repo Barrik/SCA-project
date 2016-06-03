@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="row" id="votingBlock">
+      <div class="col-sm-4" id="featureList">
+        <div class="row featureItem unselectable" ui-sref="list.feature0">
+          {{list.features[0].name}}
+        </div>
+        <div class="row featureItem unselectable" ui-sref="list.feature1">
+          {{list.features[1].name}}
+        </div>
+        <div class="row featureItem unselectable" ui-sref="list.feature2">
+          {{list.features[2].name}}
+        </div>
+        <div class="row featureItem unselectable" ui-sref="list.feature3">
+          {{list.features[3].name}}
+        </div>
+        <div class="row featureItem unselectable" ui-sref="list.feature4">
+          {{list.features[4].name}}
+        </div>
+
+        <!-- <div class="row featureItem" id="feature1">Facebook Login</div>
+        <div class="row featureItem" id="feature2">Twitter Feed</div>
+        <div class="row featureItem" id="feature3">Today's Weather</div>
+        <div class="row featureItem" id="feature4">Threaded Comments</div>
+        <div class="row featureItem" id="feature5">Profile Photos</div> -->
+      </div>
+      <div class="col-sm-8" id="featurePage">
+        <!-- filler -->
+        <ui-view></ui-view>
+      </div>
+    </div>
+  </div>
+</div>

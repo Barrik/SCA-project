@@ -1,0 +1,48 @@
+angular.module('app')
+    .config(function($stateProvider,$urlRouterProvider){
+        // ROUTER PROVIDER ASSIGNS THE DEFAULT URL PAGE
+        $urlRouterProvider.otherwise('/home');
+        $stateProvider
+            // ASSIGNING STATES
+            .state('home',{
+                url:'/home',
+                templateUrl:'home/home.html',
+                controller:"homeCtrl"
+            })
+            .state('list',{
+                url:'/feature-list',
+                templateUrl:'list/list.html',
+                controller:"listCtrl",
+                controllerAs:"list",
+                abstract:true
+            })
+            // CREATING A CHILD STATE
+            .state('home.contact',{
+                url:'/contact',
+                templateUrl:'tabs/contact.html'
+            })
+            .state('list.feature0',{
+                url:'/feature0',
+                templateUrl:'feature-pages/feature-page-facebook.html'
+            })
+            .state('list.feature1',{
+                url:'/feature1',
+                templateUrl:'feature-pages/feature-page-twitter.html'
+            })
+            .state('list.feature2',{
+                url:'/feature2',
+                templateUrl:'feature-pages/feature-page-weather.html'
+            })
+            .state('list.feature3',{
+                url:'/feature3',
+                templateUrl:'feature-pages/feature-page-comments.html'
+            })
+            .state('list.feature4',{
+                url:'/feature4',
+                templateUrl:'feature-pages/feature-page-photos.html'
+            })
+            .state('list.featureDefault',{
+                url:'/features',
+                templateUrl:'feature-pages/feature-page-default.html'
+            });
+    });

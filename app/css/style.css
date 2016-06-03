@@ -1,0 +1,57 @@
+
+/*============================ UNIVERSAL =============================*/
+.unselectable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+
+/*=========================== HOME ==========================*/
+
+
+
+/*=========================== FEATURE LIST ==========================*/
+#votingBlock {
+  margin-top: 5vh;
+}
+#featureList {
+  background-color: whitesmoke;
+  height: 75vh;
+  border-top: 2px solid black;
+}
+/*#featureList #feature1 {
+  border-top: 2px solid black;
+  background-color: yellow;
+  height: 20%;
+}
+#featureList #feature2 {
+  background-color: orange;
+  height: 20%;
+}
+#featureList #feature3 {
+  background-color: green;
+  height: 20%;
+}
+#featureList #feature4 {
+  background-color: cyan;
+  height: 20%;
+}
+#featureList #feature5 {
+  background-color: purple;
+  height: 20%;
+}*/
+.featureItem {
+  color: black;
+  border: 2px solid black;
+  border-top: 0;
+  height: 20%;
+}
+#featurePage {
+  background-color: red;
+  height: 75vh;
+  border: 2px solid black;
+  /*border-left: 0;*/
+}
